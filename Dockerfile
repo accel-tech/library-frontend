@@ -11,8 +11,10 @@ COPY . ./
 RUN npm run build
 
 
-FROM quay.io/mohamedf0/nginx
+FROM quay.io/mohamedf0/serve
 
-COPY --from=build /build/dist/document-management /usr/share/nginx/html
+COPY --from=build /build/dist/document-management /app
+
+CMD ["serve", "-s", "-p", "80", "/app"]
 
 EXPOSE 80
