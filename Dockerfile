@@ -1,4 +1,4 @@
-FROM node:16.10 AS build
+FROM quay.io/mohamedf0/node:16.10 AS build
 
 WORKDIR /build
 
@@ -11,8 +11,8 @@ COPY . ./
 RUN npm run build
 
 
-FROM nginx
+FROM quay.io/mohamedf0/nginx
 
-COPY --from=build /build/dist /usr/share/nginx/html
+COPY --from=build /build/dist/document-management /usr/share/nginx/html
 
 EXPOSE 80
