@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://library-api.apps.origins.heritage.africa',
+  apiUrl: 'https://library-api.apps.origins.heritage.africa/',
   allowExtesions: [
     {
       type: 'office',

@@ -2,8 +2,8 @@
   "name": "document-management",
   "version": "1.2.0",
   "scripts": {
-    "start": "ng serve -c production",
-    "dev": "ng serve",
+    "ng": "ng",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -14,13 +14,10 @@
   "dependencies": {
     "@angular/animations": "^14.0.1",
     "@angular/cdk": "^14.0.1",
-    "@angular-devkit/build-angular": "^14.0.1",
-    "@angular/compiler-cli": "^14.0.1",
     "@angular/common": "^14.0.1",
     "@angular/compiler": "^14.0.1",
     "@angular/core": "^14.0.1",
     "@angular/forms": "^14.0.1",
-    "@angular/cli": "^14.0.1",
     "@angular/material": "^14.0.1",
     "@angular/platform-browser": "^14.0.1",
     "@angular/platform-browser-dynamic": "^14.0.1",
@@ -54,6 +51,9 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.0.1",
+    "@angular/cli": "^14.0.1",
+    "@angular/compiler-cli": "^14.0.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
