@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://www.google.com',
+  apiUrl: 'https://library-api.apps.origins.heritage.africa/',
   allowExtesions: [
     {
       type: 'office',
