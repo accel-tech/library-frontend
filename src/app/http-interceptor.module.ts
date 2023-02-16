@@ -29,7 +29,7 @@ export class HttpRequestInterceptor implements HttpInterceptor {
     if (req.url.lastIndexOf('i18n') > -1) {
       return next.handle(req);
     }
-    const url = req.url.lastIndexOf('api') > -1 ? req.url : '/api/' + req.url;
+    const url = req.url.lastIndexOf('api') > -1 ? req.url : 'api/' + req.url;
     if (token) {
       const newReq = req.clone({
         headers: req.headers.set('Authorization', 'Bearer ' + token),
