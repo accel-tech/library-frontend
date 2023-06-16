@@ -64,9 +64,11 @@
     cursor: pointer;
     border-bottom: 1px solid #dee2e6;
     text-align: center;
+    padding: 3px;
   }
   .nav-item.active {
-    background-color: #1976d2;
+    // background-color: #1976d2;
+    background-color: #000;
     color: #fff;
   }
 

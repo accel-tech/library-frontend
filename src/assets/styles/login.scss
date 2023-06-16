@@ -54,11 +54,27 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.login-logo {
+.logo-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+ 
   img {
-    min-height: 80px;
-    margin-bottom: 40px;
+    width: 150px;
+    height: min-content;
+  }
+}
+
+.login-logo {
+  margin: 40px 0px;
+  img {
+    // min-height: 80px;
+    margin-bottom: 10px;
     min-width: 99px;
+    max-width: 250px;
   }
 }
 .file {
@@ -118,8 +134,8 @@
   width: 660px;
   min-height: 100vh;
   display: block;
-  background-color: #f7f7f7;
-  padding: 83px 55px 55px 55px;
+  background-color: #fff;
+  padding: 20px 55px 55px 55px;
 }
 
 .login100-form-title {
@@ -137,12 +153,12 @@
     width: 660px;
     min-height: 100vh;
     display: block;
-    background-color: #f7f7f7;
+    background-color: #fff;
     padding: 20px 55px 55px 55px;
   }
   .login-logo {
     img {
-      max-height: 50px;
+      // max-height: 99px;
       margin-bottom: 20px;
     }
   }
